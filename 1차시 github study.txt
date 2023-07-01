@@ -68,3 +68,13 @@ Hotfix: 긴급 수정 브랜치
 한 번에 옮기기: git checkout -b 이름
 
 github rebase
+
+사수와 부사수가 다르게 만들고 올릴 때 사용
+
+여기서는 yourfeature 과 myfeature 사옹
+이 둘이 Develop에 올리는 것이 목표
+
+이때 rebase를 사용한다.
+
+yourfeature과 myfeature에 각각 다른 파일을 생성 후
+develop로 돌아와 git rebase yourfeature or git rebase myfeature를 한다.
