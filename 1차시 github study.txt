@@ -1,0 +1,51 @@
+1. 버전 관리의 필요성
+
+건축 = 명세서 작성 -> 원자재 선정 -> 건축 -> 분양 -> 보수 공사(고쳐 주세요 -> 다시 돌려주세요 = 어려움)
+
+개발 = 명세서 작성 -> 환경 설정 -> 빌드 -> 배포 -> 픽스(고쳐 주세요 -> 다시 돌려주세요 = 쉬움)
+
+버전 관리(Version Control System): 동일한 정보에 대한 여러 버전을 관리하는 것(복구, 추적, 보존, 독립)
+
+Git: 오픈소스 버전 관리 시스템
+
+Github: Git hosting(서버 공간 임대 서비스) 웹서비스
+
+리포지토리 만들 때 중요한 점
+Add.gitignore: 파일캐시 같은 필요없는 것들을 올리지 않도록 하는 것
+Choose a license: 아파치처럼 라이센스 필요한 것들
+
+순서
+
+1. git init : 로컬 저장소 생성 명령어
+2. git remote add origin "깃허브 주소": 추가할 원격 github 주소
+-> origin(리모트 저장소 별명, 다른거 써도는 되는데 그냥 쓰는게 좋음)
+-> https://github.com/(Github 도메인)jeongdonggi(아이디)Sku_Study.git(리포지토리)
+
+3. git fetch: 로컬 저장소 최신화
+4. git merge origin/main: 로컬 저장소 동기화
+   git pull origin main: 위의 두 개 한번에 실행
+
+5. git branch
+
+6.git status : 로컬 저장소 변경사항 확인 명령
+7.git add 파일이름 : 파일 올리기
+  git add . : 변화된 모든 파일 올리기(.git 파일 하위 모든 파일)
+8.git status : 로컬 저장소 변경사항 확인 명령
+9. git commit -m "설명": 올린 파일 설명
+
+10. git log: 현재까지의 수정 로그 보여주기(q로 나가기)
+
+11. git push origin main : 원격 저장소에 파일 올리기
+
+git stash: 임시저장 명령
+파일 변경 후 stash 명령어를 사용하면 임시 저장 후 변경 전으로 돌아간다
+
+1. 파일 변경
+2. git stash: 파일 임시 저장 및 전으로 돌아가기
+3. git stash apply : 임시 저장 불러오기
+
+git branch
+
+브랜치: 소스코드를 여러 버전으로 관리하기 위해 사용하는 스냅샷에 대한 포인터
+
+장점: 작업 효율 상승
