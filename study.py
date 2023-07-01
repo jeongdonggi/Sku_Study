@@ -3,3 +3,6 @@ def study():
 
 def update():
     print("update")
+
+def develop():
+    print("develop")
