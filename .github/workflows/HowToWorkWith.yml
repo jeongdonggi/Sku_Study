@@ -6,9 +6,9 @@ jobs:
     steps:
       - run:
           echo *** LOAD ***
-          sudo mkdir -p /home/Sku_Study/
-          sudo git clone https::github.com/jeongdonggi/Sku_Study.git /home/Sku_Study/
-          cd /home/Sku_Study/
+          sudo mkdir -p /home/sku_study/
+          sudo git clone https::github.com/jeongdonggi/Sku_Study.git /home/sku_study/
+          cd /home/sku_study/
           echo *** LOAD **
           
           echo *** INSTALL ***
