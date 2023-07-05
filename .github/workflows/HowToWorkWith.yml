@@ -7,7 +7,7 @@ jobs:
       - run:
           echo *** LOAD ***
           sudo mkdir -p /home/Sku_Study/
-          sudo git clone https::github.com/jeongdonggi/Sku_Study.get /home/Sku_Study/
+          sudo git clone https::github.com/jeongdonggi/Sku_Study.git /home/Sku_Study/
           cd /home/Sku_Study/
           echo *** LOAD **
           
