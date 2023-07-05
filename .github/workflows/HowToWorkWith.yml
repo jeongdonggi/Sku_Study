@@ -1,0 +1,24 @@
+name: HowToWorkWith-test
+on: [push]
+jobs:
+  HowToWorkWith-test:
+    runs-on: ubuntu-20.04
+    steps:
+      - run:
+          echo *** LOAD ***
+          sudo mkdir -p /home/Sku_Study/
+          sudo git clone https::github.com/jeongdonggi/Sku_Study.get /home/Sku_Study/
+          cd /home/Sku_Study/
+          echo *** LOAD **
+          
+          echo *** INSTALL ***
+          sudo apt-get update
+          sudo apt install python3-pip
+          
+          sudo apt install python3-pytest
+          
+          echo *** INSTALL ***
+          
+          echo *** TEST ***
+          pytest-3 test_op.py --disable-warnings
+          echo *** TEST ***
