@@ -1,0 +1,53 @@
+# 디버깅 하는 법
+
+## 디버깅
+
+시스템의 논리적이 농류나 비정상적 연산을 찾아 원인을 밝히고 수정하는 작업 과정
+
+- 디버깅 간 핵심: 원인 파악
+하나씩 전부 다 검사(확인)해봐야 한다.
+
+1. Search
+
+Google
+=>
+stackoverflow
+reddit
+tistoty
+facebook
+github
+
+ChatGPT
+
+2. Breakpoint
+
+코드 왼쪽에 점을 찍고 시작하면 점 바로 위까지 실행한다.(디버깅을 실행해야함)
+
+3. Logging
+
+가장 많이 사용
+
+logging.basicConfig(
+        filename= 'head.txt',
+        filemode= 'wt',
+        level=logging.DEBUG
+    )
+    logger = logging.getLogger() # 로거 만듦
+    logger.info('[HEAD] 여러 변수, 설정리스트, 제로엠큐 컨텍스트, 로커 생성') # 시작 부분 보여줌
+
+# 최적화 하는 법
+
+## 최적화
+
+허용된 자원의 한계 내에서 주어진 요구사항을 만족시키면서 최선의 결과를 얻는 과정
+
+- 고려사항
+
+성능 분석: 알고리즘 분석, 외부 소스 검증, 성능 측정
+병목구간 파악: 트레이드 오프, 스레드 안정성, 구조적 한계
+최적화
+
+- 최적화 도구 추천
+
+cProfile: 파이썬 내장 프로파일링 도구 - 쓰는게 좋음
+time: 파이썬 내장 시간측정 도구
