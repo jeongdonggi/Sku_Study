@@ -1,0 +1,36 @@
+# 병렬화 하는 법
+
+클러스터: 본인 업무 역량
+코어: 직원
+
+## 병렬화
+
+크고 복잡한 문제를 작게 나눠 동시에 병렬 처리를 한다.
+
+## 병렬화를 배우기에 앞서
+
+os: 모든걸 제어하는 가장 기본적인 소프트웨어
+scheduling: 어떤식으로 실행할 것인가(os가 해줌)
+process: 컴퓨터에서 연속적으로 실행되고 있는 프로그램(런타임 동안)
+thread: 한 프로세스에서 실행되는 단위
+
+Process vs Thread
+1. 자원 공유 관점
+IPC(process 통로 놔두기 어려움)
+thread 더 쉬움
+2. 위험성 관점
+thread: 변수가 겹치면 위험하다.
+process: 안전
+-> 충돌이 아예 없진 않음
+Critical section(임계 영역)
+공유 메모리에 진입 막기
+Race condition
+공유 메모리 접근한 것
+Dead lock
+무한 대기 상태
+Live lock
+일은 안하고 락의 해제와 획득을 무한 반복
+Starvation(기아 상태)
+자원을 할당 받지 못하는 상태
+
+Mutex & Semaphore
